@@ -9,12 +9,12 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="gender" placeholder="Enter Gender (Male/Female)" required="required" /> </br> </br>
-        <input type="text" name="mstatus" placeholder="Enter Marital Status (Married/Single)" required="required" /> </br> </br>
+    	<input type="text" name="gender" placeholder="Enter Gender (0 for Female / 1 for Male)" required="required" /> </br> </br>
+        <input type="text" name="mstatus" placeholder="Enter Marital Status (0 for Single / 1 for Married)" required="required" /> </br> </br>
 	<input type="text" name="appincome" placeholder="Enter Applicant Income" required="required" /> </br> </br>
 	<input type="text" name="coincome" placeholder="Enter Co-Applicant Income" required="required" /> </br> </br>
 	<input type="text" name="amount" placeholder="Enter Loan Amount" required="required" /> </br> </br>
-	<input type="text" name="duration" placeholder="Enter Loan Duration (in years)" required="required" /> </br> </br>
+	<input type="text" name="duration" placeholder="Enter Loan Duration (in months)" required="required" /> </br> </br>
         <button type="submit"> Predict Risk </button>
     </form>
 
