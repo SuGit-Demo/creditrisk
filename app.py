@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, url_for, redirect, render_template
 import numpy as np
 import pickle
 import requests
-import ibm_db
 
 app = Flask(__name__)
 model = pickle.load(open('model.h5','rb'))
