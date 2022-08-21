@@ -6,5 +6,3 @@ sklearn
 numpy
 pandas
 lightgbm
-Flask_db2
-ibm_db
