@@ -13,6 +13,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     Gender = request.form.get('gender')
+    MStatus = request.form.get('mstatus')
     Appincome = request.form.get('appincome')
     Coincome = request.form.get('coincome')
     LoanAmount = request.form.get('amount')
